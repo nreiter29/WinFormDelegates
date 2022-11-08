@@ -29,10 +29,10 @@
             // lblCounter
             // 
             this.lblCounter.AutoSize = true;
-            this.lblCounter.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCounter.Location = new System.Drawing.Point(111, 175);
+            this.lblCounter.Font = new System.Drawing.Font("Segoe UI", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lblCounter.Location = new System.Drawing.Point(317, 138);
             this.lblCounter.Name = "lblCounter";
-            this.lblCounter.Size = new System.Drawing.Size(56, 65);
+            this.lblCounter.Size = new System.Drawing.Size(115, 133);
             this.lblCounter.TabIndex = 0;
             this.lblCounter.Text = "0";
             // 

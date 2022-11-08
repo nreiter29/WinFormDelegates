@@ -27,7 +27,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbMaxCount = new System.Windows.Forms.TextBox();
             this.lblHitCount = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.pbMain = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
             // 
             // btnOpenChildForm
@@ -59,25 +59,25 @@
             // lblHitCount
             // 
             this.lblHitCount.AutoSize = true;
-            this.lblHitCount.Location = new System.Drawing.Point(211, 110);
+            this.lblHitCount.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblHitCount.Location = new System.Drawing.Point(498, 94);
             this.lblHitCount.Name = "lblHitCount";
-            this.lblHitCount.Size = new System.Drawing.Size(0, 25);
+            this.lblHitCount.Size = new System.Drawing.Size(0, 28);
             this.lblHitCount.TabIndex = 3;
             // 
-            // label2
+            // pbMain
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(211, 150);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 25);
-            this.label2.TabIndex = 4;
+            this.pbMain.Location = new System.Drawing.Point(325, 94);
+            this.pbMain.Name = "pbMain";
+            this.pbMain.Size = new System.Drawing.Size(150, 34);
+            this.pbMain.TabIndex = 4;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.pbMain);
             this.Controls.Add(this.lblHitCount);
             this.Controls.Add(this.tbMaxCount);
             this.Controls.Add(this.label1);
@@ -95,6 +95,6 @@
         private Label label1;
         private TextBox tbMaxCount;
         private Label lblHitCount;
-        private Label label2;
+        private ProgressBar pbMain;
     }
 }

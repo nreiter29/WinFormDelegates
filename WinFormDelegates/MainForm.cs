@@ -7,13 +7,18 @@ namespace WinFormDelegates {
             InitializeComponent();
         }
 
+
+        private void btnOpenChildForm_Click(object sender, EventArgs e) {
+            child = new ChildForm(Convert.ToInt32(tbMaxCount.Text), writeToLbHitCount, writeValueToProgressBar);
+            child.Show();
+        }
         private void writeToLbHitCount(string message) {
             lblHitCount.Text = message;
         }
-
-        private void btnOpenChildForm_Click(object sender, EventArgs e) {
-            child = new ChildForm(Convert.ToInt32(tbMaxCount.Text), writeToLbHitCount);
-            child.Show();
+        
+        private void writeValueToProgressBar(int value, int maxValue) {
+            pbMain.Value = value;
+            pbMain.Maximum = maxValue;
         }
     }
 }
