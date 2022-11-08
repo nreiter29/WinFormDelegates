@@ -76,7 +76,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(629, 169);
             this.Controls.Add(this.pbMain);
             this.Controls.Add(this.lblHitCount);
             this.Controls.Add(this.tbMaxCount);

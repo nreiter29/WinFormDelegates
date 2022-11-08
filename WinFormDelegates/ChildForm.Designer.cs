@@ -30,7 +30,7 @@
             // 
             this.lblCounter.AutoSize = true;
             this.lblCounter.Font = new System.Drawing.Font("Segoe UI", 50F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lblCounter.Location = new System.Drawing.Point(317, 138);
+            this.lblCounter.Location = new System.Drawing.Point(130, 23);
             this.lblCounter.Name = "lblCounter";
             this.lblCounter.Size = new System.Drawing.Size(115, 133);
             this.lblCounter.TabIndex = 0;
@@ -40,7 +40,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(376, 188);
             this.Controls.Add(this.lblCounter);
             this.Name = "ChildForm";
             this.Text = "ChildForm";
