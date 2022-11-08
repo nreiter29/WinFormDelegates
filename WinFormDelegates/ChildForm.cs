@@ -12,13 +12,17 @@ using Timer = System.Windows.Forms.Timer;
 namespace WinFormDelegates {
     public partial class ChildForm : Form {
 
+        public delegate void onReadyDelegate(string message);
+
         private Timer timer;
         private int count = 0;
         private int hitCount = 0;
         private int max = 0;
+        private onReadyDelegate onReady;
 
-        public ChildForm(int maxCount) {
+        public ChildForm(int maxCount, onReadyDelegate onReady) {
             InitializeComponent();
+            this.onReady = onReady;
 
             max = maxCount;
             timer = new Timer();
@@ -32,6 +36,7 @@ namespace WinFormDelegates {
 
             if (count >= (max + 1)) {
                 hitCount++;
+                onReady.Invoke(Convert.ToString(hitCount));
                 count = 0;
             }
 

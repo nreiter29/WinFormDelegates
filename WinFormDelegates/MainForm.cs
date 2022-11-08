@@ -5,15 +5,14 @@ namespace WinFormDelegates {
 
         public MainForm() {
             InitializeComponent();
-            lblHitCount.Text = "";
         }
 
-        private void writeTolbHitCount(string message) {
+        private void writeToLbHitCount(string message) {
             lblHitCount.Text = message;
         }
 
         private void btnOpenChildForm_Click(object sender, EventArgs e) {
-            child = new ChildForm(Convert.ToInt32(tbMaxCount.Text));
+            child = new ChildForm(Convert.ToInt32(tbMaxCount.Text), writeToLbHitCount);
             child.Show();
         }
     }
