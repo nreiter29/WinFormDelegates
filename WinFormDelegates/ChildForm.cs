@@ -36,7 +36,7 @@ namespace WinFormDelegates {
 
             if (count >= (max + 1)) {
                 hitCount++;
-                onReady.Invoke(Convert.ToString(hitCount));
+                onReady.Invoke($"{hitCount}. time hit!");
                 count = 0;
             }
 
