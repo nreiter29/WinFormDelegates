@@ -5,6 +5,11 @@ namespace WinFormDelegates {
 
         public MainForm() {
             InitializeComponent();
+            lblHitCount.Text = "";
+        }
+
+        private void writeTolbHitCount(string message) {
+            lblHitCount.Text = message;
         }
 
         private void btnOpenChildForm_Click(object sender, EventArgs e) {

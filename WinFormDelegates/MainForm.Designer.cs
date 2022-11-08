@@ -26,6 +26,7 @@
             this.btnOpenChildForm = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tbMaxCount = new System.Windows.Forms.TextBox();
+            this.lblHitCount = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOpenChildForm
@@ -54,11 +55,20 @@
             this.tbMaxCount.Size = new System.Drawing.Size(150, 31);
             this.tbMaxCount.TabIndex = 2;
             // 
+            // lblHitCount
+            // 
+            this.lblHitCount.AutoSize = true;
+            this.lblHitCount.Location = new System.Drawing.Point(211, 110);
+            this.lblHitCount.Name = "lblHitCount";
+            this.lblHitCount.Size = new System.Drawing.Size(0, 25);
+            this.lblHitCount.TabIndex = 3;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblHitCount);
             this.Controls.Add(this.tbMaxCount);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOpenChildForm);
@@ -74,5 +84,6 @@
         private Button btnOpenChildForm;
         private Label label1;
         private TextBox tbMaxCount;
+        private Label lblHitCount;
     }
 }
